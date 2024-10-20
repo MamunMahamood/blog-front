@@ -1,0 +1,104 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Exploring the Future of AI",
+      "author": "John Doe",
+      "content": "In this blog post, we explore the cutting-edge developments in artificial intelligence and their potential impact on various industries.",
+      "published_at": "2024-10-01",
+      "tags": ["AI", "Technology", "Future"],
+      "category": "latest",
+      "image_url": "https://static.vecteezy.com/system/resources/thumbnails/015/634/808/small_2x/circular-hud-connection-with-circuit-board-futuristic-modern-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg"
+    },
+    {
+      "id": 2,
+      "title": "A Guide to Mindful Living",
+      "author": "Jane Smith",
+      "content": "Mindfulness is a practice that can improve your well-being. This guide helps you understand and implement mindfulness techniques in daily life.",
+      "published_at": "2024-09-25",
+      "tags": ["Mindfulness", "Health", "Well-being"],
+      "category": "latest",
+      "image_url": "https://static.vecteezy.com/system/resources/thumbnails/015/634/808/small_2x/circular-hud-connection-with-circuit-board-futuristic-modern-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Top 10 Travel Destinations for 2024",
+      "author": "Emily Green",
+      "content": "Discover the top 10 travel destinations that should be on your bucket list for 2024. From tropical beaches to vibrant cities, this list has it all.",
+      "published_at": "2024-09-20",
+      "tags": ["Travel", "Destinations", "Adventure"],
+      "category": "latest",
+      "image_url": "https://static.vecteezy.com/system/resources/thumbnails/015/634/808/small_2x/circular-hud-connection-with-circuit-board-futuristic-modern-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg"
+    },
+    {
+      "id": 4,
+      "title": "The Benefits of Remote Work",
+      "author": "David Lee",
+      "content": "Remote work has transformed the modern workplace. This blog explores the benefits of working remotely and how to maximize productivity at home.",
+      "published_at": "2024-09-18",
+      "tags": ["Remote Work", "Productivity", "Work-Life Balance"],
+      "category": "latest",
+      "image_url": "https://static.vecteezy.com/system/resources/thumbnails/015/634/808/small_2x/circular-hud-connection-with-circuit-board-futuristic-modern-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Mastering Web Development in 2024",
+      "author": "Michael Brown",
+      "content": "Stay ahead in the field of web development by learning the latest trends, tools, and technologies. This blog offers valuable insights for developers.",
+      "published_at": "2024-09-15",
+      "tags": ["Web Development", "Programming", "Technology"],
+      "category": "latest",
+      "image_url": "https://static.vecteezy.com/system/resources/thumbnails/015/634/808/small_2x/circular-hud-connection-with-circuit-board-futuristic-modern-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Sustainable Fashion: A Growing Trend",
+      "author": "Sophia Taylor",
+      "content": "Sustainable fashion is not just a trend, it's a necessity. Learn how the fashion industry is evolving to become more eco-friendly and ethical.",
+      "published_at": "2024-09-12",
+      "tags": ["Fashion", "Sustainability", "Eco-friendly"],
+      "category": "popular",
+      "image_url": "https://static.vecteezy.com/system/resources/thumbnails/015/634/808/small_2x/circular-hud-connection-with-circuit-board-futuristic-modern-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg"
+    },
+    {
+      "id": 7,
+      "title": "How to Start a Successful Side Hustle",
+      "author": "Chris Johnson",
+      "content": "Starting a side hustle can help you achieve financial freedom. This blog outlines the steps you need to take to start and grow a successful side business.",
+      "published_at": "2024-09-10",
+      "tags": ["Entrepreneurship", "Side Hustle", "Business"],
+      "category": "popular",
+      "image_url": "https://static.vecteezy.com/system/resources/thumbnails/015/634/808/small_2x/circular-hud-connection-with-circuit-board-futuristic-modern-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg"
+    },
+    {
+      "id": 8,
+      "title": "The Importance of Mental Health Awareness",
+      "author": "Linda White",
+      "content": "Mental health is as important as physical health. This blog post discusses the importance of raising awareness about mental health issues and how to support those affected.",
+      "published_at": "2024-09-05",
+      "tags": ["Mental Health", "Awareness", "Support"],
+      "category": "popular",
+      "image_url": "https://static.vecteezy.com/system/resources/thumbnails/015/634/808/small_2x/circular-hud-connection-with-circuit-board-futuristic-modern-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Investing in Cryptocurrency: What You Need to Know",
+      "author": "Alex Martinez",
+      "content": "Cryptocurrency continues to be a popular investment option. This blog explores the risks and rewards of investing in crypto and offers tips for beginners.",
+      "published_at": "2024-08-30",
+      "tags": ["Cryptocurrency", "Investment", "Finance"],
+      "category": "popular",
+      "image_url": "https://static.vecteezy.com/system/resources/thumbnails/015/634/808/small_2x/circular-hud-connection-with-circuit-board-futuristic-modern-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg"
+    },
+    {
+      "id": 10,
+      "title": "The Evolution of Digital Marketing",
+      "author": "Olivia Harris",
+      "content": "Digital marketing has evolved rapidly in recent years. This blog covers the latest strategies and techniques that businesses are using to reach their target audiences.",
+      "published_at": "2024-08-20",
+      "tags": ["Digital Marketing", "Business", "Strategy"],
+      "category": "popular",
+      "image_url": "https://static.vecteezy.com/system/resources/thumbnails/015/634/808/small_2x/circular-hud-connection-with-circuit-board-futuristic-modern-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg"
+    }
+  ]
+}
