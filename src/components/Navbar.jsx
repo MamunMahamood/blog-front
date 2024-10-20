@@ -31,6 +31,12 @@ const Navbar = () => {
                 </Link>
               </li>
 
+              <li>
+                <Link to="/addBlog" className="text-gray-700 hover:text-blue-500">
+                  Add Blog
+                </Link>
+              </li>
+
               {/* Dropdown for Categories */}
               <li className="relative">
                 <button
