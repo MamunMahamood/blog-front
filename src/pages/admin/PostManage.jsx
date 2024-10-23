@@ -1,7 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const PostManage = () => {
+
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const res = await fetch("http://localhost:8000/blogs");
+        const data = await res.json();
+        setBlogs(data);
+        setLoading(false);
+      } catch (e) {
+        console.log(e);
+        setLoading(false);
+      }
+    };
+    fetchBlogs();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <div className="spinner"></div>
+      </div>
+    ); // Display a loading message while fetching data
+  }
+  // Default category is "latest"
+  
+
   return (
     <>
       <div class="flex-grow p-8">
@@ -24,10 +54,11 @@ const PostManage = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="py-2 px-4 border-b">First Post</td>
-              <td class="py-2 px-4 border-b">Admin</td>
-              <td class="py-2 px-4 border-b">2024-08-20</td>
+            {blogs.map((blog)=>(
+              <tr>
+              <td class="py-2 px-4 border-b">{blog.title}</td>
+              <td class="py-2 px-4 border-b">{blog.author}</td>
+              <td class="py-2 px-4 border-b">{blog.published_at}</td>
               <td class="py-2 px-4 border-b">
                 <Link to="#" class="text-blue-500 hover:underline">
                   Edit
@@ -37,6 +68,8 @@ const PostManage = () => {
                 </Link>
               </td>
             </tr>
+
+            ))}
             {/* <!-- Repeat rows as needed --> */}
           </tbody>
         </table>

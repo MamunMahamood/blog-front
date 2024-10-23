@@ -10,7 +10,7 @@ const DashboardContent = () => {
         <h1 className="text-3xl font-bold mb-6">Dashboard Overview</h1>
 
         {/* <!-- Statistics Grid --> */}
-        <Statistics />
+        <Statistics/>
 
         {/* <!-- Recent Activities --> */}
         <Activities />

@@ -28,7 +28,7 @@ import { toast } from "react-toastify";
     };
 
     addBlogSubmit(newBlog);
-    toast.success('Blog created Successfully');
+    toast.success('Blog Created Successfully');
     return navigate('/blogs');
   };
   return (
@@ -97,10 +97,11 @@ import { toast } from "react-toastify";
                   <option value="" disabled>
                     Select a category
                   </option>
-                  <option value="tech">Technology</option>
-                  <option value="life">Lifestyle</option>
-                  <option value="edu">Education</option>
+                  <option value="technology">Technology</option>
+                  <option value="lifestyle">Lifestyle</option>
+                  <option value="education">Education</option>
                   <option value="latest">Latest</option>
+                  <option value="popular">Popular</option>
                 </select>
               </div>
 

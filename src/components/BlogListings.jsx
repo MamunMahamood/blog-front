@@ -1,21 +1,37 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import BlogListing from "./BlogListing";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const BlogListings = ({ category = "all", isHome = false }) => {
+  const navigate = useNavigate();
+
+  let token = useState();
+  if (localStorage.getItem("token")) {
+    token = localStorage.getItem("token");
+  }
+
+
+  console.log(token);
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await fetch("http://localhost:8000/blogs");
-        const data = await res.json();
+        // console.log(token);
+        const res = await axios.get("http://localhost:8000/api/auth/blogs", {
+          headers: {
+            Authorization: `Bearer ${token}`, // Pass your token here
+          },
+        });
+        const data = res.data; // Axios automatically parses JSON responses
+
         setBlogs(data);
         setLoading(false);
       } catch (e) {
-        console.log(e);
+        navigate("/login");
         setLoading(false);
       }
     };
@@ -30,7 +46,6 @@ const BlogListings = ({ category = "all", isHome = false }) => {
     ); // Display a loading message while fetching data
   }
   // Default category is "latest"
-  
 
   // Filter blogs based on the selected category
   const filteredBlogs =
@@ -70,6 +85,9 @@ const BlogListings = ({ category = "all", isHome = false }) => {
       </div>
     </>
   );
+
+
+
 };
 
 export default BlogListings;

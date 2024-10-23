@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Blogs from "../blogs.json";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const allCategories = Blogs.blogs.map((blog) => blog.category);
 
   // Create a Set to get unique categories
@@ -12,6 +14,12 @@ const Navbar = () => {
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
   };
+
+  const handleLogout = ()=>{
+        localStorage.removeItem('token'); // Remove the token from local storage
+        navigate('/login'); 
+
+  }
 
   return (
     <>
@@ -76,6 +84,9 @@ const Navbar = () => {
                 <Link to="/register" className="text-gray-700 hover:text-blue-500">
                   Register
                 </Link>
+                <div onClick={handleLogout} className="text-gray-700 hover:text-blue-500">
+                  logout
+                </div>
               </li>
             </ul>
           </div>
